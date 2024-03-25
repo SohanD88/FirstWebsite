@@ -1,0 +1,302 @@
+ <!--Creates your HTML page-->
+<!DOCTYPE html>
+<!--sets up the page-->
+<html>
+
+    <!--Heading tag, information about the webpage-->
+    <!--Now meta tags. Meta tags tell the user what the webpage about. They are self closing-->
+    <head>
+        <!--Title tag makes the webpoge title-->
+        <title> 
+            My First Website
+        </title>
+        <!--Name of the meta tag and the content-->
+        <!--Uses the UTF-8 chararcters-->
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Beans avec le poop">
+        <meta name = "keywords" content = "Beance, avec, fromage, mange">
+        <!--If someone is viewing the website on a phone, it can be scaled to their screen using this-->
+        <meta name = "viewport" content = "width = device-widthn initial-scale = 1.0">
+        <!--Refreshes the site every x seconds-->
+        <meta http-equiv="refresh" content="1000">
+    </head>
+    <!--Body tag for every piece of text in the webpage. Seen by user-->
+    <!--Use style to change the color. Incorporates come css values-->
+    <!--can iether use rgb or preset colors-->
+    <!--background color is for bg color and color is for the the font color-->
+    <body style = "background-color: white;"> 
+        <!--<h1> is the largest heading while <h6> is the smallest-->
+        <h1 style="color: chocolate;">
+            Website
+        </h1>
+        <!--<hr> adds a sectioning line between elements. There is no closing-->
+        <hr>
+        <h2 style = "color:rgb(5, 240, 222)">
+            Website 2
+        </h2>
+        <p>
+            Paragraph of plain text with a < p >
+        </p>
+        <!--<br> is a line break between tags. This adds a couple of spaces between elements. There is no clasing tag-->
+        <br>
+        <p style = "background-color: darkcyan; color: aliceblue">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem laudantium, sint optio officiis voluptate repellat id dolore, esse temporibus corporis accusamus sed fuga eum, illo ducimus quasi non est fugiat!
+        </p>
+
+        <!--ul means unordered list, sets up a list -->
+        <h4> Unordered List: Bullet Points</h4>
+        <ul>
+            <!--li makes a list with bullet points-->
+            <li> Eggs </li>
+            <li> Milk </li>
+            <li> Cheese </li>  
+            <li> Nested List
+                <ul>
+                    <li>You can nest these three lists inside of each other, making it nested</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4> Ordered List: Numbered </h4>
+        <!--uses ol and then has a type attribute if you want, numbers, letters, or roman numerals-->
+        <ol type = "i">
+            <li>Go take a dump</li>
+            <li>Wipe</li>
+            <li>Wash your hands</li>
+        </ol>
+
+        <h4> Description List</h4>
+        <!--Uses dl and has <dt> for the term and <dd> for the definition of the term-->
+        <dl>
+            <dt>Angry</dt>
+            <dd>To be mad</dd>
+            <dt>Somber</dt>
+            <dd>To be sad</dd>
+        </dl>
+        <!--a sets up a link and using 'href' adds attributes to the link, like the address-->
+        <!--target determines if the new link opens in a new tab or not. _blank opens in a new tab, but _self opens in the same tab.-->
+        <a href = "https://www.youtube.com" target="_blank"> Don't buy groceries </a>
+        <!--the title = attribute creates a title when the user hovers over the link. -->
+        <br>
+        <a href = "https://www.portal.lcps.org" target="_self" title = "Check your grades"> Grades </a>
+       
+        <br>
+        <a href = "index2.html" target = "_blank" style = "color: blueviolet;"> Go to webpage 2</a>
+        <br>
+        <!--Using mailto:, it opens up main and begins the email sending process-->
+        <a href = "mailto:darshbabu08@gmail.com" title = "send me an email"> 
+            Send me an email
+        </a>
+        <br>
+        <!--img sets up an image, and src is the source link for said image. You don't need to close images-->
+        <!--You can change the width and heght in pixels. They scale proportionally with each other-->
+        <!--alt is an attribute that adds a desscription to the image that can be read by screen readers. the title attribute is the same as the one for links-->
+        <img src = "https://i.kym-cdn.com/entries/icons/original/000/042/064/pwcover.jpg" height = "500" width = "900" alt = "Plug walk" title = "plug walk">
+        <!--You can set up a link within an image by puttin the image inside of the <a> title-->
+        <a href = "https://www.youtube.com/watch?v=ZWcXRZgtXj8" target = "_break">
+            <img src = "https://i.pinimg.com/originals/3c/b1/61/3cb1616468ae68a7283c318497d4d61e.png" alt = "nikado" title = "plug walk">
+        </a>
+        <br>
+
+        <!--Now Tables-->
+        <!--table sets up a table. the border call makes a border around the table wiht varying thickness-->
+        <table  border="1" bgcolor = "red" width = 350> 
+            <!--tr sets the table's row-->
+            <!--bgcolor sets the backgroudn color of the table-->
+            <tr bgcolor = " Teal">
+                
+                <!--td is the table's row's data. Right now, the row has only 7 columns. <th is the table header -->
+                <th width = "100">Sunday</th>
+                <th width = "100">Monday</th>
+                <th width = "100">Tuesday</th>
+                <th width = "100">Wednesday</th>
+                <th width = "100">Thursday</th>
+                <th width = "100">Friday</th>
+                <th width = "100">Saturday</th>
+            </tr>
+            <!--Under the headers, we can add the data-->
+            <!--aling attribute can left right or center the text-->
+            <tr bgcolor = "pink" align="center">
+                <td>Closed</td>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+    
+        <!-- div creates a border of any shape. It's a container than you wrap anything inside of.-->
+        <br>
+        <!--Form creates a text box that allows the user to type into. The get method gets data from a source. THe get request passes the text form the form into the url-->
+        <!--action specifie where to send the data once the form is submitted-->
+        <form action = "index.html" method = "get">
+            <!--Inside the form, there is an input type that takes in text. The name = "name" is the name of the form. placeholder is the greyed out text that is visible when tpying into the text box-->
+            <!--label labels next to the form. Iding the input type assignes the label to the text box-->
+            <label for = "fname">First Name:</label>
+            <!--required gives a popup saying please fill out this field -->
+            <input type = "text" name="name" placeholder="NAMES" id = "fname" required>
+            <!--button has the submit type for which type of input control to display. With the submit answers text -->
+
+            <br>
+            <div>
+                <input type = "reset">
+            </div>
+            <br>
+            <div>
+                <!--Password typers makes the characters entered hidden-->
+                <!--maxlength attribute makes the password a max amt of characters-->
+                <label for = "pass"> password: </label>
+                <input type="password" id = "pass" name = "pass" placeholder="Enter password" required maxlenth = "10">
+            </div>
+            <br>
+            <div>
+                <!--email type makes the box require an email format-->
+                <label for = "email"> email: </label>
+                <input type="email" id = "email" name = "email" placeholder="Enter email" required>
+            </div>
+            <br>
+            <div>
+                <!--tel type makes the characters in phoen unmber format-->
+                <label for = "phone"> phone #: </label>
+                <input type="tel" id = "phone" name = "phone" placeholder="123-456-7890" required>
+            </div>
+            <br>
+            <div>
+                <!--date type makes the characters in date format-->
+                <label for = "bdate"> birthdate </label>
+                <input type="date" id = "bdate" name = "bdate" placeholder="mm/dd/yyyy" required>
+            </div>
+            <br>
+            <div>
+                <!--number type makes the characters like a number way-->
+                <label for = "quant"> quantity: </label>
+                <input type="number" id = "quant" name = "quant" placeholder="" required min="0" max="100" value = "1">
+
+                
+            </div>
+            <br>
+            <div>
+                <!--radio button type makes the characters like mcqs-->
+                <!--since they all have the same name =, you can now only select one of them-->
+                <label for = "button1">Mr. </label>
+                <input type="radio" id = "button1" name = "button1" value = "Mr." required>
+
+                <label for = "button1">Mrs. </label>
+                <input type="radio" id = "button1" name = "button1" value = "Mrs." required>
+
+                <label for = "button1">Dr. </label>
+                <input type="radio" id = "button1" name = "button1" value = "Dr."required>
+                
+            </div>
+            <br>
+            <div>
+                <!--Dropdown-->
+                <label for = "payment"> payment: </label>
+                <select id = "payment" name = "payment">
+                    <option value = "credit">credit card</option>
+                    <option value = "debit">debit card</option>
+                    <option value = "check">check </option>
+                </select>
+
+                
+            </div>
+            <br>
+            <div>
+                <input type="submit">
+            </div>
+
+        </form>
+        <br>
+        <!--Working with audio now. src gets the path of the audio. Controls allows for a control bar to pop up with the audio-->
+        <!--autoplay autoplays it once the website is opened-->
+        <audio autoplay controls title = "plug walk" src = Audios/healthbenefits.mp3> </audio>
+        <!-- muted makes the audio initially muted and loop constantly loops the audio-->
+        <audio muted loop controls>
+            <!--audio files can be played like this as well, with the source using <source> inside the <audio> The program goes in order, with the top on playing. If the top on edoesnt't work, a provided backup audio plays, or the tst I wrote is given-->
+            <source src = Audios/clover.mp3>
+            This browswer does not support this for some reason
+        </audio>
+        <br>
+
+        <!--Working with videos now. -->
+        <!--same thing as audio, controls for controls and everything else is the same-->
+        <!--Just like audio files, the video ones can be written with <source> but it is not done here-->
+        <video controls src = Videos/mammoni.mp4 height = 300 width = 300 > </video>
+        <br>
+
+        <!--Now some text formatting-->
+        <p>Text formatting begins here</p>
+        <!--<b> tags bold-->
+        <p>Text formatting <b>bolds</b> here.</p>
+        <!--<i> tags italicise-->
+        <p>Text formatting <i>italicizes</i> here.</p>
+        <!--<big> tags make the text bigger-->
+        <p>Text formatting <big>gets bigger</big> here.</p>
+        <!--<small> tags make the text samller-->
+        <p>Text formatting <small>gets smaller</small> here.</p>
+        <!--<sub> makes the text a subscript-->
+        <p>Text formatting <sub>gets subscripted</sub> here.</p>
+        <!--<sup> makes the text a superscript-->
+        <p>Text formatting <sup>gets superscripted</sup> here.</p>
+        <!--<ins> makes the text underlinded-->
+        <p>Text formatting <ins>gets underlined</ins> here.</p>
+        <!--<del> makes a line through the text-->
+        <p>Text formatting <del>gets deleted</del> here.</p>
+        <!--<mark> highlights the text in yellow-->
+        <p>Text formatting <mark>gets highlighted</mark> here.</p>
+
+        
+        <!--Now using <span> and div. Span adds markup to texts or portions of a document-->
+        <!--Div allows all the div affected text to have something in common.-->
+        <h4>
+            Le fromage
+        </h4>
+        <div style = "background-color: cyan;">
+        <p>
+            <span style="color: palevioletred">Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>Fugiat adipisci eum similique! Quod hic ex eligendi rerum libero alias excepturi et vel deserunt, enim porro eos sunt aperiam aliquid consequatur.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem a quas sequi omnis, explicabo et dignissimos minima voluptas. Nesciunt odio, unde placeat quisquam blanditiis dolor ab sequi officia beatae est.
+        </p>
+        </div>
+
+        <!--Now iFrames to embed content from another source into another document. No closing-->
+        <iframe src="https://www.bing.com" width = "750" height = "700"> </iframe>
+        <br>
+        <!--WE can also embed other html files-->
+        <!--boarder: 0 removes the border around the embeds-->
+        <iframe style = "border:0" src = "index2.html"> </iframe>
+        <br>
+
+        <!--Now buttons-->
+        <!--surrounding buttons with a tags makes them a link-->
+        <a href = "https://www.instagram.com/sandoval_cutz/" target = "_blank">
+         <button style = "background-color: cadetblue; color: antiquewhite;">
+            Instagram
+         </button>
+        </a>
+        <!--Disables the button from doing anything-->
+        <!--border radius rounds the edges of the button-->
+        <button disabled style = "border-radius: 5;">
+            Lal
+        </button>
+
+        <!--we can implement java script into the button-->
+        <!--using onclick, it calls the testJS function which returns a word-->
+        <button onclick = "testJs()" style = "background-color: aquamarine;">Click</button>
+
+        <p id="test">Hello</p>
+            <!--we can use scripts to make a js function inside of HTML code-->
+            <!--Here it changes the text from hello to Froamge-->
+            <script>
+                function testJs()
+                {
+                    document.getElementById("test").innerHTML = "Fromage";
+                }
+            </script>
+
+    </body>
+
+</html>
